@@ -29,10 +29,20 @@ PACKAGES="$PACKAGES luci-i18n-diskman-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-firewall-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-filemanager-zh-cn"
 PACKAGES="$PACKAGES luci-app-argon-config"
-PACKAGES="$PACKAGES "
-PACKAGES="$PACKAGES "
-PACKAGES="$PACKAGES "
-PACKAGES="$PACKAGES "
+PACKAGES="$PACKAGES luci-app-airplay2"
+#支持计划重启
+PACKAGES="$PACKAGES luci-i18n-autoreboot-zh-cn"
+PACKAGES="$PACKAGES luci-app-p910nd"
+PACKAGES="$PACKAGES fail2ban"
+PACKAGES="$PACKAGES znc-mod-fail2ban"
+#KMS服务器
+PACKAGES="$PACKAGES luci-app-vlmcsd"
+#流量监控工具
+PACKAGES="$PACKAGES luci-i18n-statistics-zh-cn"
+#Client-Splash是无线MESH网络的一个热点认证系统
+#PACKAGES="$PACKAGES luci-i18n-splash-zh-cn"
+#分布式AP管理程序
+#PACKAGES="$PACKAGES luci-i18n-dawn-zh-cn"
 #24.10
 PACKAGES="$PACKAGES luci-i18n-package-manager-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-ttyd-zh-cn"
