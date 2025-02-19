@@ -16,6 +16,8 @@
 >wget -qO imm.sh https://cafe.cpolar.top/wkdaily/zero3/raw/branch/main/zero3/imm.sh && chmod +x imm.sh && ./imm.sh<br>
 >安装面板<br>
 >is-opkg install luci-i18n-quickstart-zh-cn<br>
+>安装lucky大吉<br>
+>is-opkg install app-meta-lucky<br>
 
 ## 如何查询都有哪些插件?
 https://mirrors.sjtug.sjtu.edu.cn/immortalwrt/releases/23.05.4/packages/aarch64_cortex-a53/luci/ <br>
