@@ -48,9 +48,9 @@ PACKAGES="$PACKAGES luci-i18n-statistics-zh-cn"
 #分布式AP管理程序
 #PACKAGES="$PACKAGES luci-i18n-dawn-zh-cn"
 #ARP 绑定工具，可以将 IP 地址绑定到设备 MAC 地址上，防止 IP 地址被冒用
-PACKAGES="$PACKAGES luci-i18n-splash-zh-cn"luci-app-arpbind
+PACKAGES="$PACKAGES luci-i18n-arpbind-zh-cn"
 #一个抓包分析工具，用于网络监测和故障排除
-PACKAGES="$PACKAGES luci-i18n-splash-zh-cn"luci-app-cshark	
+PACKAGES="$PACKAGES luci-i18n-cshark-zh-cn"	
 #24.10
 PACKAGES="$PACKAGES luci-i18n-package-manager-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-ttyd-zh-cn"
@@ -62,17 +62,17 @@ PACKAGES="$PACKAGES openssh-sftp-server"
 PACKAGES="$PACKAGES fdisk"
 PACKAGES="$PACKAGES script-utils"
 PACKAGES="$PACKAGES luci-i18n-samba4-zh-cn"
-luci-app-store
 #带宽控制，用于限制每个设备的带宽使用
-luci-app-xlnetacc
-#允许对网络访问进行控制，例如阻止某些设备访问互联网
-luci-app-accesscontrol
+PACKAGES="$PACKAGES luci-i18n-xlnetacc-zh-cn"
+#允许对网络访问进行控制，例如阻止某些设备访问互联网,not
+#PACKAGES="$PACKAGES luci-app-accesscontrol"
 #具有广告过滤、隐私保护、家长控制等功能的 DNS 服务器
-luci-app-adguardhome
+PACKAGES="$PACKAGES luci-i18n-xlnetacc-zh-cn"luci-app-adguardhome
 #防止IP欺诈攻击的插件，可以实现基于BCP 38规范的反欺诈功能
-luci-app-bcp38
-
-
+PACKAGES="$PACKAGES luci-i18n-xlnetacc-zh-cn"luci-app-bcp38
+#软件市场，not
+#PACKAGES="$PACKAGES luci-app-store"
+PACKAGES="$PACKAGES "
 # 判断是否需要编译 Docker 插件
 if [ "$INCLUDE_DOCKER" = "yes" ]; then
     PACKAGES="$PACKAGES luci-i18n-dockerman-zh-cn"
