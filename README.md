@@ -12,7 +12,10 @@
 > 5、新增全志平台R1S、香橙派Zero3等机型的工作流<br>
 > 6、新增用户预设置pppoe拨号功能<br>
 > 7、新增树莓派①②③④⑤<br>
-
+安装istore命令
+wget -qO imm.sh https://cafe.cpolar.top/wkdaily/zero3/raw/branch/main/zero3/imm.sh && chmod +x imm.sh && ./imm.sh
+面板
+is-opkg install luci-i18n-quickstart-zh-cn
 
 ## 如何查询都有哪些插件?
 https://mirrors.sjtug.sjtu.edu.cn/immortalwrt/releases/23.05.4/packages/aarch64_cortex-a53/luci/ <br>
