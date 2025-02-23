@@ -28,7 +28,7 @@ PACKAGES="$PACKAGES curl"
 PACKAGES="$PACKAGES luci-i18n-diskman-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-firewall-zh-cn"
 #not
-PACKAGES="$PACKAGES luci-i18n-filemanager-zh-cn"
+#PACKAGES="$PACKAGES luci-i18n-filemanager-zh-cn"
 PACKAGES="$PACKAGES luci-app-argon-config"
 PACKAGES="$PACKAGES luci-i18n-argon-config-zh-cn"
 PACKAGES="$PACKAGES luci-app-airplay2"
@@ -71,7 +71,7 @@ PACKAGES="$PACKAGES luci-i18n-samba4-zh-cn"
 #允许对网络访问进行控制，例如阻止某些设备访问互联网,not
 #PACKAGES="$PACKAGES luci-app-accesscontrol"
 #具有广告过滤、隐私保护、家长控制等功能的 DNS 服务器，not
-PACKAGES="$PACKAGES luci-app-adguardhome"
+#PACKAGES="$PACKAGES luci-app-adguardhome"
 #防止IP欺诈攻击的插件，可以实现基于BCP 38规范的反欺诈功能，not
 #PACKAGES="$PACKAGES luci-app-bcp38"
 #软件市场，not
