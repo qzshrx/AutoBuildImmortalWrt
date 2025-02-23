@@ -32,7 +32,7 @@ PACKAGES="$PACKAGES luci-app-argon-config"
 PACKAGES="$PACKAGES luci-app-airplay2"
 #支持计划重启
 PACKAGES="$PACKAGES luci-i18n-autoreboot-zh-cn"
-PACKAGES="$PACKAGES kmod-Ip"
+#PACKAGES="$PACKAGES kmod-Ip"
 PACKAGES="$PACKAGES kmod-usb-printer"
 PACKAGES="$PACKAGES luci-app-p910nd"
 PACKAGES="$PACKAGES fail2ban"
