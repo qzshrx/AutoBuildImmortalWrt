@@ -21,40 +21,20 @@ cat /home/build/immortalwrt/files/etc/config/pppoe-settings
 echo "$(date '+%Y-%m-%d %H:%M:%S') - 开始编译..."
 
 
-
 # 定义所需安装的包列表 下列插件你都可以自行删减
 PACKAGES=""
 PACKAGES="$PACKAGES curl"
 PACKAGES="$PACKAGES luci-i18n-diskman-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-firewall-zh-cn"
-#not
-#PACKAGES="$PACKAGES luci-i18n-filemanager-zh-cn"
 PACKAGES="$PACKAGES luci-app-argon-config"
 PACKAGES="$PACKAGES luci-i18n-argon-config-zh-cn"
 PACKAGES="$PACKAGES luci-app-airplay2"
 #支持计划重启
 PACKAGES="$PACKAGES luci-i18n-autoreboot-zh-cn"
-#PACKAGES="$PACKAGES kmod-Ip"
 PACKAGES="$PACKAGES kmod-usb-printer"
 PACKAGES="$PACKAGES luci-app-p910nd"
-#PACKAGES="$PACKAGES fail2ban"
-#PACKAGES="$PACKAGES znc-mod-fail2ban"
 #KMS服务器
 PACKAGES="$PACKAGES luci-app-vlmcsd"
-#流量监控工具，not
-#PACKAGES="$PACKAGES luci-i18n-statistics-zh-cn"
-#Client-Splash是无线MESH网络的一个热点认证系统
-#PACKAGES="$PACKAGES luci-i18n-splash-zh-cn"
-#BATMAN-adv协议软件包，用于在mesh网络中实现路由器之间的通信
-#PACKAGES="$PACKAGES luci-app-bmx6"
-#无线网络自组网（EasyMesh）的Web界面配置管理
-#PACKAGES="$PACKAGES luci-app-easymesh"	
-#分布式AP管理程序
-#PACKAGES="$PACKAGES luci-i18n-dawn-zh-cn"
-#ARP 绑定工具，可以将 IP 地址绑定到设备 MAC 地址上，防止 IP 地址被冒用，not
-#PACKAGES="$PACKAGES luci-i18n-arpbind-zh-cn"
-#一个抓包分析工具，用于网络监测和故障排除，not
-#PACKAGES="$PACKAGES luci-i18n-cshark-zh-cn"	
 #24.10
 PACKAGES="$PACKAGES luci-i18n-package-manager-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-ttyd-zh-cn"
@@ -66,17 +46,38 @@ PACKAGES="$PACKAGES openssh-sftp-server"
 PACKAGES="$PACKAGES fdisk"
 PACKAGES="$PACKAGES script-utils"
 PACKAGES="$PACKAGES luci-i18n-samba4-zh-cn"
+#not
+#具有广告过滤、隐私保护、家长控制等功能的 DNS 服务器，not
+#PACKAGES="$PACKAGES luci-app-adguardhome"
+#好用的文件夹管理工具
+#PACKAGES="$PACKAGES luci-i18n-filemanager-zh-cn"
+#软件市场，not
+#PACKAGES="$PACKAGES luci-app-store"
+#流量监控工具，not
+#PACKAGES="$PACKAGES luci-i18n-statistics-zh-cn"
+#PACKAGES="$PACKAGES fail2ban"
+#PACKAGES="$PACKAGES znc-mod-fail2ban"
 #带宽控制，用于限制每个设备的带宽使用，not
 #PACKAGES="$PACKAGES luci-i18n-xlnetacc-zh-cn"
 #允许对网络访问进行控制，例如阻止某些设备访问互联网,not
 #PACKAGES="$PACKAGES luci-app-accesscontrol"
-#具有广告过滤、隐私保护、家长控制等功能的 DNS 服务器，not
-#PACKAGES="$PACKAGES luci-app-adguardhome"
 #防止IP欺诈攻击的插件，可以实现基于BCP 38规范的反欺诈功能，not
 #PACKAGES="$PACKAGES luci-app-bcp38"
-#软件市场，not
-#PACKAGES="$PACKAGES luci-app-store"
-#PACKAGES="$PACKAGES "
+#ARP 绑定工具，可以将 IP 地址绑定到设备 MAC 地址上，防止 IP 地址被冒用，not
+#PACKAGES="$PACKAGES luci-i18n-arpbind-zh-cn"
+#一个抓包分析工具，用于网络监测和故障排除，not
+#PACKAGES="$PACKAGES luci-i18n-cshark-zh-cn"	
+
+#PACKAGES="$PACKAGES kmod-Ip"
+#Client-Splash是无线MESH网络的一个热点认证系统
+#PACKAGES="$PACKAGES luci-i18n-splash-zh-cn"
+#BATMAN-adv协议软件包，用于在mesh网络中实现路由器之间的通信
+#PACKAGES="$PACKAGES luci-app-bmx6"
+#无线网络自组网（EasyMesh）的Web界面配置管理
+#PACKAGES="$PACKAGES luci-app-easymesh"	
+#分布式AP管理程序
+#PACKAGES="$PACKAGES luci-i18n-dawn-zh-cn"
+
 # 判断是否需要编译 Docker 插件
 if [ "$INCLUDE_DOCKER" = "yes" ]; then
     PACKAGES="$PACKAGES luci-i18n-dockerman-zh-cn"
