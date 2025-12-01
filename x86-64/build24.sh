@@ -61,6 +61,7 @@ PACKAGES="$PACKAGES openssh-sftp-server"
 PACKAGES="$PACKAGES luci-i18n-samba4-zh-cn"
 PACKAGES="$PACKAGES luci-app-p910nd"
 PACKAGES="$PACKAGES luci-app-vlmcsd"
+PACKAGES="$PACKAGES luci-i18n-vlmcsd-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-arpbind-zh-cn"
 #PACKAGES="$PACKAGES luci-i18n-cshark-zh-cn"	
 # 文件管理器
